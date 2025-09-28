@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MindMitra Design System - Calming Mental Health Platform
+All colors MUST be HSL for accessibility and theming.
+*/
+
+@layer base {
+  :root {
+    /* Core Background & Text */
+    --background: 210 25% 98%;
+    --foreground: 215 25% 15%;
+
+    /* Card Components */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    /* Popovers & Dropdowns */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Calming Blue */
+    --primary: 210 65% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 65% 52%;
+
+    /* Secondary - Healing Green */
+    --secondary: 162 48% 85%;
+    --secondary-foreground: 162 48% 25%;
+
+    /* Accent - Motivational Warm */
+    --accent: 45 86% 70%;
+    --accent-foreground: 45 86% 15%;
+
+    /* Muted Elements */
+    --muted: 210 25% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Trust Blue Variant */
+    --trust: 215 75% 65%;
+    --trust-foreground: 0 0% 100%;
+
+    /* Calm Green Variant */
+    --calm: 162 58% 65%;
+    --calm-foreground: 0 0% 100%;
+
+    /* Hope Yellow Variant */
+    --hope: 45 96% 65%;
+    --hope-foreground: 45 96% 15%;
+
+    /* Status Colors */
+    --success: 142 76% 58%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 93% 58%;
+    --warning-foreground: 45 93% 15%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Form Elements */
+    --border: 215 25% 88%;
+    --input: 215 25% 94%;
+    --ring: 210 65% 58%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 65% 58%), hsl(162 58% 65%));
+    --gradient-calm: linear-gradient(180deg, hsl(162 58% 65% / 0.1), hsl(210 65% 58% / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 25% 98%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(210 65% 58% / 0.1);
+    --shadow-hover: 0 8px 25px hsl(210 65% 58% / 0.15);
+    --shadow-focus: 0 0 0 3px hsl(210 65% 58% / 0.2);
+
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.2s ease-out;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme for Better Sleep & Reduced Eye Strain */
+    --background: 215 30% 8%;
+    --foreground: 210 25% 92%;
+
+    --card: 215 25% 12%;
+    --card-foreground: 210 25% 92%;
+
+    --popover: 215 25% 12%;
+    --popover-foreground: 210 25% 92%;
+
+    --primary: 210 65% 68%;
+    --primary-foreground: 215 30% 8%;
+    --primary-hover: 210 65% 62%;
+
+    --secondary: 215 25% 18%;
+    --secondary-foreground: 210 25% 92%;
+
+    --accent: 45 86% 75%;
+    --accent-foreground: 215 30% 8%;
+
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --trust: 215 75% 72%;
+    --trust-foreground: 215 30% 8%;
+
+    --calm: 162 58% 72%;
+    --calm-foreground: 215 30% 8%;
+
+    --hope: 45 96% 72%;
+    --hope-foreground: 215 30% 8%;
+
+    --success: 142 76% 65%;
+    --success-foreground: 215 30% 8%;
+    
+    --warning: 45 93% 65%;
+    --warning-foreground: 215 30% 8%;
+    
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 215 30% 8%;
+
+    --border: 215 25% 22%;
+    --input: 215 25% 18%;
+    --ring: 210 65% 68%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(210 65% 68%), hsl(162 58% 72%));
+    --gradient-calm: linear-gradient(180deg, hsl(162 58% 72% / 0.1), hsl(210 65% 68% / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(215 25% 12%), hsl(215 25% 15%));
+
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-hover: 0 8px 25px hsl(0 0% 0% / 0.4);
+    --shadow-focus: 0 0 0 3px hsl(210 65% 68% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Global focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary/50 ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer components {
+  /* Utility Classes for Mental Health Platform */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .calm-gradient {
+    background: var(--gradient-calm);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-gentle {
+    transition: var(--transition-gentle);
+  }
+
+  /* Floating Animation for Calming Effect */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+
+  /* Breathing Animation for MindMitra */
+  .breathe {
+    animation: breathe 4s ease-in-out infinite;
+  }
+
+  /* Gentle Fade In */
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  /* Hover Lift Effect */
+  .hover-lift {
+    @apply transition-all duration-300 hover:translate-y-[-2px] hover:shadow-hover;
+  }
+
+  /* Text Gradients */
+  .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--trust)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-calm {
+    background: linear-gradient(135deg, hsl(var(--calm)), hsl(var(--secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  /* Custom animations for mental wellness */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes pulse-gentle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+}
